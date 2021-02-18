@@ -50,19 +50,18 @@ This implementation:
 ## Getting Started
 VIBE has been implemented and tested on Ubuntu 18.04 with python >= 3.7. It supports both GPU and CPU inference.
 If you don't have a suitable device, try running our Colab demo. 
-
+```bash
+install using 'README MY.txt'
+```
 Clone the repo:
 ```bash
-git clone https://github.com/mkocabas/VIBE.git
+git clone https://github.com/shikui08/VIBE.git
 ```
 
-Install the requirements using `virtualenv` or `conda`:
+Install the requirements using `virtualenv`
 ```bash
 # pip
 source scripts/install_pip.sh
-
-# conda
-source scripts/install_conda.sh
 ```
 
 ## Running the Demo
@@ -77,6 +76,8 @@ source scripts/prepare_data.sh
 Then, running the demo is as simple as:
 
 ```bash
+python demo.py --vid_file sample_video.mp4 --output_folder output/ --no_render
+
 # Run on a local video
 python demo.py --vid_file sample_video.mp4 --output_folder output/ --display
 
