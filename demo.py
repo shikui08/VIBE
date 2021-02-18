@@ -30,7 +30,7 @@ from multi_person_tracker import MPT
 from torch.utils.data import DataLoader
 
 from lib.models.vibe import VIBE_Demo
-from lib.utils.renderer import Renderer
+#from lib.utils.renderer import Renderer
 from lib.dataset.inference import Inference
 from lib.utils.smooth_pose import smooth_pose
 from lib.data_utils.kp_utils import convert_kps
